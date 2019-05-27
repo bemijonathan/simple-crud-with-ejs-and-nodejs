@@ -1,0 +1,15 @@
+<li> <a href="/"> home</a> </li>
+<li> <a href="/new"> new </a> </li>
+<li> <a href="/single"> single </a> </li>
+
+<% result.forEach(e => { %>
+    <div>
+        <img src= "<%= e.image %>" width="90"/><br>
+        <%= e.name %><br>
+        <%= e.desc %><br>
+        <%= e.date.toLocaleDateString() %><br>
+        <a href="/single/ <%= e.name %>" /> <button>
+            view
+        </button></a>
+    </div>
+<%}) %>

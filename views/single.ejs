@@ -1,0 +1,9 @@
+
+<% result.forEach(e => { %>
+    <div>
+        <img src= "<%= e.image %>" width="90"/><br>
+        <%= e.name %><br>
+        <%= e.desc %><br>
+        <%= e.date.toLocaleDateString() %><br>
+    </div>
+<%}) %>
